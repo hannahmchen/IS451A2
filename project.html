@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* Hide scroll bars */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('Assignment1.1.jpg');
+            /* Replace with your uploaded background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Adjust transparency by changing the last value (0.5) */
+            z-index: -1;
+            /* Ensure the overlay is behind the content */
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .menu-description {
+            font-size: 0.7em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>Our Menu</h1>
+        <div class="menu-item">
+            <p>1. Espresso</p>
+            <p class="menu-description">Enjoy a warm latte on a chilly morning, or an iced americano on a sunny
+                afternoon.</p>
+        </div>
+        <div class="menu-item">
+            <p>2. Brewed</p>
+            <p class="menu-description">Try our hot drip coffee or our refreshing cold brew with a splash of your
+                favorite creamer.</p>
+        </div>
+        <div class="menu-item">
+            <p>3. Tea</p>
+            <p class="menu-description">From black tea, to green tea (matcha too!), to herbal tea, you name it, we have
+                it.</p>
+        </div>
+    </div>
+</body>
+
+</html>
